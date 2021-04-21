@@ -1,9 +1,9 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
     var foto = window.document.querySelector('img#imagem')
-    // var data = new Date()
-    // var hora = data.getHours()
-    var hora  = 16
+    var data = new Date()
+    var hora = data.getHours()
+    //var hora  = 16 //PARA TESTAR OS HORARIOS
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 0 && hora < 12) { //Manha
         foto.src = 'manha.png'
